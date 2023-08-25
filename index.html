@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"></meta>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+    <title>Bubble Blash</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+    <!-- icons cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"></link>
+    <!-- font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="./main.css"></link>
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="flex flex-col justify-center w-[100vw] h-[100vh] items-center gap-[1em] p-[1em] bg-[#fafafa]">
+    <div class="flex flex-col justify-center items-center h-[100%] gap-[2em]">
+      <div>
+        <p class="text-[#e7008a] w-[100%] text-center">
+          This is bubble hit game
+          <br/>
+          You have 60 seconds to hit exact number of bubble to increase your
+          score..
+        </p>
+      </div>
+      <div class="container bg-[#fff] w-[30em] h-[100%] rounded rounded-[10px] overflow-hidden">
+        <div class="top bg-[#e7008a] flex justify-between p-[1em_2em] items-center h-[fit-content] text-[#fff] gap-[0.5em]">
+          <div class="flex justify-between items-center gap-[0.5em]">
+            <p>Hit</p>
+            <h4 id="hit" class="text-[#212121] text-center p-[0.2em] w-[2em] rounded rounded-[5px] h-[fit-content] bg-[#fff]"></h4>
+          </div>
+          <div class="flex justify-between items-center gap-[0.5em]">
+            <p>Timer</p>
+            <h4 id="timer" class="text-[#212121] text-center p-[0.2em] w-[2em] rounded rounded-[5px] h-[fit-content] bg-[#fff]">60</h4>
+          </div>
+          <div class="flex justify-between items-center gap-[0.5em]">
+            <p>Score</p>
+            <h4 id="score" class="text-[#212121] text-center p-[0.2em] w-[2.5em] rounded rounded-[5px] h-[fit-content] bg-[#fff]">0</h4>
+          </div>
+        </div>
+        <div class="" id="bottom"></div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
